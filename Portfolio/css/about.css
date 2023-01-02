@@ -1,0 +1,344 @@
+:root {
+    --color1: #252A34;
+    --color2: #0F4C75;
+    --color3: #4D4C7D;
+    --color4: #FF6F3C;
+    --color5: #303841;
+    --color6: #37E2D5;
+    --color7: #3AB4F2;
+}
+
+.about {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: 0.5s ease;
+}
+
+.about:hover {
+    background-color: rgba(0,0,0, 0.6); 
+}
+
+.about__content {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.about__me {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+h4 {
+    border-bottom: 1px solid var(--color4);
+    text-align: center;
+    font-size: 22px;
+    color: var(--color4);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about__me p {
+    margin: 15px 0;
+    color: #fff;
+    font-weight: 400px;
+}
+
+.myname {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--color4);
+}
+
+
+/* -------------------SKILLS----------- */
+
+
+.myskills {
+    height: 100%;
+    width: 100%;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.skills_text {
+    left: 20px;
+    color: #fff;
+    width: 90%;
+}
+
+.skbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skitem {
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 15px 0 15px 0;
+    margin-bottom: 1.4rem;
+    transition: 0.2s;
+}
+
+.skitem:hover {
+    border: 3px solid var(--color6);
+    opacity: 0.7;
+}
+
+
+.skl_text {
+    color: var(--color6);
+}
+
+
+.skills__item {
+    padding: 9px;
+}
+
+.skills__bg {
+    width: 90%;
+    background-color: var(--color1);
+    border-radius: 15px;
+    margin: 1rem;
+    position: relative;
+}
+
+.pop {
+    position: absolute;
+    font-size: small;
+    right: 10px;
+    color: var(--color6);
+    z-index: 1;
+}
+
+.html {
+    position: relative;
+    animation-name: html;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #FF0000;
+}
+
+.css {
+    position: relative;
+    animation-name: css;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #264de4;
+}
+
+.bootstrap {
+    position: relative;
+    animation-name: bootstrap;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #563d7c;
+}
+
+.sass {
+    position: relative;
+    animation-name: sass;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #CD6799;
+}
+
+.javascript {
+    position: relative;
+    animation-name: javascript;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px #F0DB4F;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+        background-color: #FF0000;
+    }
+    25% {
+        width: 30%;
+        background-color: #FF0000;
+    }
+    50% {
+        width: 50%;
+        background-color: #FF0000;
+    }
+    100% {
+        width: 60%;
+        background-color: #FF0000;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+        background-color: #264de4;
+    }
+    25% {
+        width: 10%;
+        background-color: #264de4;
+    }
+    50% {
+        width: 25%;
+        background-color: #264de4;
+    }
+    100% {
+        width: 30%;
+        background-color: #264de4;
+    }
+}
+
+@keyframes sass {
+    0% {
+        width: 0%;
+        background-color: #CD6799;
+    }
+    25% {
+        width: 2%;
+        background-color: #CD6799;
+    }
+    50% {
+        width: 5%;
+        background-color: #CD6799;
+    }
+    100% {
+        width: 10%;
+        background-color: #CD6799;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+        background-color: #F0DB4F;
+    }
+    25% {
+        width: 3%;
+        background-color: #F0DB4F;
+    }
+    50% {
+        width: 5%;
+        background-color: #F0DB4F;
+    }
+    100% {
+        width: 10%;
+        background-color: #F0DB4F;
+    }
+}
+
+
+/* ---------------WORKS------------------- */
+
+.myworks {
+    width: 100%;
+    height: 100%;
+}
+
+.work__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.work__list h3{
+    color: #fff;
+}
+
+
+/* --------------CONTACT------------------ */
+
+.contact__me {
+    height: 100%;
+    width: 100%;
+}
+
+.contact__form {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputBox {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color1);
+    color: var(--color6);
+    border-radius: 6px;
+    border: 1px solid var(--color6);
+    outline: none;
+    font-size: 1em;
+    pointer-events: fill;
+    transition: .6s;
+}
+
+.inputBox span {
+    padding: 10px;
+    position: absolute;
+    left: 8px;
+    color: var(--color7);
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.nav__link button {
+    background-color: var(--color1);
+    margin: auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: var(--color6);
+    transform: translateX(10px) translateY(-9px);
+    font-size: .67em;
+    padding: 0 10px;
+    background-color: var(--color1);
+    border: 1px solid var(--color6);
+    box-shadow: 1px 1px 5px var(--color7);
+}
+
+.inputText {
+    color: red;
+}

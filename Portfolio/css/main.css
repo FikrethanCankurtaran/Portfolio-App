@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color1: #252A34;
+    --color2: #0F4C75;
+    --color3: #FF5403;
+    --color4: #FF6F3C;
+    --color5: #303841;
+    --color6: #37E2D5;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpaperaccess.com/full/869923.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    background-color: var(--5);
+    background-color: rgba(0,0,0, 0.6); 
+    border-radius: 1rem 0 1rem 0;
+    z-index: 111;
+}
+
+.mobilebtn {
+    display: none;
+}
+
+.magic {
+    display: none;
+}
+
+
+
+.date {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.8); 
+    color: var(--color3);
+    width: 40%;
+    padding: 8px;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+}
+
+
+.ditem {
+    margin: 0 5px;
+}
+
+
+.space {
+    margin: 0 15px;
+}
